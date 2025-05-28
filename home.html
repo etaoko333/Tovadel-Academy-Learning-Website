@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tovadel Academy - Empowering Your Tech Journey</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#7c3aed',
+            secondary: '#2563eb',
+            accent: '#f97316',
+            coolFooterStart: '#3b82f6',  // softer blue
+            coolFooterEnd: '#4f46e5'     // softer indigo
+          },
+          animation: {
+            float: 'float 3s ease-in-out infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body class="bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-50 text-gray-900">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <a href="index.html" class="text-2xl font-bold text-primary">Tovadel Academy</a>
+      <nav class="space-x-6 hidden md:flex text-gray-700 font-semibold">
+        <a href="index.html" class="hover:text-primary transition">Home</a>
+        <a href="about.html" class="hover:text-primary transition">About Us</a>
+        <a href="courses.html" class="hover:text-primary transition">Courses</a>
+        <a href="blog.html" class="hover:text-primary transition">Blog</a>
+        <a href="contact.html" class="hover:text-primary transition">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-tr from-purple-700 via-blue-600 to-indigo-700 text-white">
+      <div class="max-w-7xl mx-auto px-6 py-24 flex flex-col md:flex-row items-center gap-12">
+        <!-- Text Content -->
+        <div class="max-w-xl space-y-6">
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-lg">
+            Empowering Your Tech Journey
+          </h1>
+          <p class="text-lg md:text-xl text-purple-200 drop-shadow-md">
+            Join our hands-on training programs and kickstart your career in tech today.
+          </p>
+          <a href="courses.html" class="inline-block bg-white text-primary font-semibold px-8 py-3 rounded-md shadow hover:bg-purple-100 transition">
+            Explore Courses
+          </a>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="flex justify-center">
+          <img 
+            src="images/divinetechygirl-1181676.jpg" 
+            alt="Training session" 
+            class="rounded-lg shadow-lg max-w-sm animate-float"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Highlights -->
+    <section class="max-w-7xl mx-auto px-6 py-16 bg-gradient-to-r from-purple-50 via-blue-50 to-indigo-50 rounded-lg shadow-md">
+      <h2 class="text-3xl font-bold text-center text-primary mb-12">Our Popular Courses</h2>
+      <div class="grid gap-10 md:grid-cols-3">
+        <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition">
+          <h3 class="text-xl font-semibold mb-3">DevOps Engineer</h3>
+          <p class="text-gray-700 mb-4">
+            Master CI/CD, Docker, Kubernetes, and automation tools to streamline software delivery pipelines.
+          </p>
+          <a href="courses.html#devops" class="text-primary font-semibold hover:underline">Learn More →</a>
+        </div>
+        <!-- Add more courses here as needed -->
+      </div>
+    </section>
+
+    <!-- Computer Image Section -->
+    <section class="max-w-7xl mx-auto px-6 py-16 flex justify-center">
+      <img 
+        src="images/computer-6424586.jpg" 
+        alt="Computer" 
+        class="rounded-lg shadow-lg max-w-sm animate-float"
+      />
+    </section>
+
+    <!-- About Us -->
+    <section class="bg-white py-16 rounded-lg shadow-md max-w-5xl mx-auto px-6">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold text-primary mb-6">About Tovadel Academy</h2>
+        <p class="text-gray-700 max-w-3xl mx-auto leading-relaxed text-lg">
+          At Tovadel Academy, we believe in empowering learners with real-world skills that prepare them for the fast-paced tech industry. Founded by industry experts, our mission is to provide accessible, high-quality tech education that transforms careers and lives.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="max-w-7xl mx-auto px-6 py-16 text-center">
+      <h2 class="text-3xl font-bold text-primary mb-6">Ready to Start Your Tech Career?</h2>
+      <a href="contact.html" class="inline-block bg-primary text-white font-semibold px-10 py-4 rounded-lg shadow hover:bg-purple-800 transition">
+        Contact Us Today
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-coolFooterStart to-coolFooterEnd text-white py-10">
+    <div class="max-w-5xl mx-auto px-6">
+      <!-- Top Section: Description -->
+      <div class="mb-8 text-center">
+        <h3 class="text-2xl font-bold mb-2">Tovadel Academy</h3>
+        <p class="max-w-3xl mx-auto text-sm leading-relaxed">
+          Tovadel Academy is a premier online tech platform offering career-transitioning and upskilling courses in tech. Designed for individuals aiming to switch careers or enhance their tech skills, we help you thrive in the fast-paced technology industry.
+        </p>
+      </div>
+
+      <!-- Middle Section: Links -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-sm text-center mb-8">
+        <a href="blog.html" class="hover:underline">Blog</a>
+        <a href="about.html" class="hover:underline">About Us</a>
+        <a href="contact.html" class="hover:underline">Contact Us</a>
+        <a href="enroll.html" class="hover:underline">Enroll</a>
+        <a href="privacy.html" class="hover:underline">Privacy</a>
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="payment-policy.html" class="hover:underline">Payment Policy</a>
+        <a href="registration.html" class="hover:underline">Course Registration</a>
+        <a href="terms.html" class="hover:underline">Terms and Conditions</a>
+        <a href="courses.html" class="hover:underline">Courses</a>
+      </div>
+
+      <!-- Payment Policy Note -->
+      <div class="text-center text-sm mb-4">
+        <p><strong>Payment Plan:</strong> We offer flexible payment plans to accommodate learners from all backgrounds. Please review our <a href="payment-policy.html" class="underline">Payment Policy</a> for details.</p>
+      </div>
+
+      <!-- Refund and Contact -->
+      <div class="text-center text-xs">
+        <p>All refund requests must be made in writing to <a href="mailto:alongemiracle333@gmail.com" class="underline">alongemiracle333@gmail.com</a>.</p>
+      </div>
+
+      <!-- Bottom: Social & Copyright -->
+      <div class="mt-6 text-center text-sm">
+        <p>&copy; 2025 Tovadel Academy. All rights reserved.</p>
+        <div class="mt-4 space-x-6 text-xl flex justify-center">
+          <a href="https://linkedin.com/in/osenat-alonge-84379124b" target="_blank" class="hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/etaoko333" target="_blank" class="hover:text-gray-300"><i class="fab fa-github"></i></a>
+          <a href="https://medium.com/@osenat.alonge" target="_blank" class="hover:text-gray-300"><i class="fab fa-medium"></i></a>
+          <a href="https://wa.me/447787215455" target="_blank" class="hover:text-gray-300"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
